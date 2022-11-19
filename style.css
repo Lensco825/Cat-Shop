@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+nav, li {
+list-style: none;
+display: inline-block;
+  align-content: center;
+  word-wrap: nowrap;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+overflow: hidden;
+}
+
+header {
+  width: 100%;
+  align-items: center;
+}
+
+li {
+  padding: 30px 50px;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  height: 280px
+}
+
+.pic-item {
+  border: solid 2px red;
+  gap: 1rem;
+  border-radius: 5px;
+ 
+}
+
