@@ -32,6 +32,25 @@ li {
   padding: 30px 50px;
 }
 
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  filter: opacity(0);
+  transform: translateX(-100%);
+}
+
+.show {
+  opacity: 1;
+  filter: opacity(100%);
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
 
 .container {
   display: grid;
@@ -80,7 +99,7 @@ h1 {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  border: solid 2px red;
+  border: solid 2px #fff;
 }
 
 button {
@@ -92,3 +111,21 @@ button {
   color: #fff;
   font-weight: bold;
 }
+
+.section-pics {
+  width: 300px;
+  height: 300px;
+}
+
+.part-2 {
+  display: grid;
+  grid-template-columns: 50% auto;
+  gap: 5rem;
+}
+
+.pic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 8rem);
+  gap: 12rem;
+}
+
