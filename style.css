@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&display=swap');
+
 html, body {
   height: 100%;
   width: 100%;
@@ -8,6 +10,10 @@ list-style: none;
 display: inline-block;
   align-content: center;
   word-wrap: nowrap;
+}
+
+body {
+  font-family: 'poppins', sans-serif;
 }
 
 ul {
@@ -31,13 +37,58 @@ li {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 20px;
-  height: 280px
+  height: 180px;
 }
 
 .pic-item {
-  border: solid 2px red;
   gap: 1rem;
   border-radius: 5px;
- 
+ height: 180px;
+  width: 180px;
 }
 
+.contain2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 230px;
+  gap: 2rem;
+width: 70%;
+  float: left;
+  border: solid 2px #fff;
+}
+
+.main-sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%
+}
+
+.first-text {
+  margin-top: 250px;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 50px
+}
+
+.part-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  border: solid 2px red;
+}
+
+button {
+  border: none;
+  border-radius: 9px;
+  width: 120px;
+  height: 40px;
+  background-color: #9c6644;
+  color: #fff;
+  font-weight: bold;
+}
