@@ -5,7 +5,7 @@ html, body {
   width: 100%;
 }
 
-nav, li {
+nav, .list-items {
 list-style: none;
 display: inline-block;
   align-content: center;
@@ -14,9 +14,10 @@ display: inline-block;
 
 body {
   font-family: 'poppins', sans-serif;
+  margin: 0 0 0 0;
 }
 
-ul {
+.nav-list {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -28,8 +29,25 @@ header {
   align-items: center;
 }
 
-li {
+.list-items {
   padding: 30px 50px;
+}
+
+.list-items:hover {
+  color: #fcca46;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #fcca46;
 }
 
 .hidden {
@@ -129,3 +147,41 @@ button {
   gap: 12rem;
 }
 
+.milestones {
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.milestone-list {
+  list-style-type: disc;
+  display: block;
+}
+
+.mile-list {
+  padding-bottom: 15px;
+  font-size: 40px;
+}
+
+.letter {
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  background-image: url("https://pbs.twimg.com/media/E0Yofk4VUAIvfHL?format=jpg&name=large");
+  margin: 0 0 0 0;
+}
+
+
+.letter-main {
+  z-index: 1;
+  font-size: 25px;
+  text-align: right;
+  width: 70%;
+  margin-left: 200px;
+  padding-top: 10px;
+}
+
+p:nth-child(9) {
+  text-align: left;
+  color: black
+}
